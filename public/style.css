@@ -81,10 +81,12 @@ a {
   text-decoration: none;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.44);
   background: linear-gradient(175deg, #FF79DA, #9356DC);
+  transition: all 0.2s linear;
 }
 .reservation__btn:hover {
   filter: brightness(1.1);
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.44);
+  transition: all 0.2s linear;
 }
 
 .fonctionnement {
