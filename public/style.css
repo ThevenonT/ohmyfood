@@ -82,6 +82,7 @@ a {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.44);
   background: linear-gradient(175deg, #FF79DA, #9356DC);
 }
+
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -145,3 +146,133 @@ a {
   padding: 25px;
   padding-left: 20px;
 }
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgba(240, 240, 240, 0.678);
+  width: 100%;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+.restaurants__title {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.restaurants__containers {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.restaurants__containers__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 500px;
+  width: 90%;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.44);
+}
+.restaurants__containers__content__img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 190px;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.restaurants__containers__content__img__new {
+  text-align: right;
+  font-size: 18px;
+  width: auto;
+  position: relative;
+  top: 15px;
+  right: 15px;
+  padding: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 7%;
+  background-color: #99E2D0;
+}
+.restaurants__containers__content__img.img--0 {
+  background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+.restaurants__containers__content__img.img--1 {
+  background-position: 50% 62%;
+  background-image: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+.restaurants__containers__content__img.img--2 {
+  background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+.restaurants__containers__content__img.img--3 {
+  background-image: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+.restaurants__containers__content__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  width: 98%;
+  max-width: 100%;
+}
+.restaurants__containers__content__description__txt {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 10px;
+  text-align: left;
+}
+.restaurants__containers__content__description__title {
+  font-size: 22px;
+}
+.restaurants__containers__content__description__localisation {
+  font-size: 22px;
+}
+.restaurants__containers__content__description__icon {
+  font-size: 30px;
+}
+.restaurants__containers__content__description__icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: bottom;
+  width: 40px;
+  height: 30px;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  margin-right: 20px;
+}
+.restaurants__containers__content__description__icons:hover {
+  cursor: pointer;
+}
+.restaurants__containers__content__description__icons:hover:active {
+  transform: scale(1.2);
+}
+.restaurants__containers__content__description__icons:hover .desactive {
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.restaurants__containers__content__description__icons:hover .active {
+  transform: translateY(-100%);
+  background: -webkit-linear-gradient(80deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  transition: all 0.2s linear;
+}
+.restaurants__containers__content__description__icons__icon {
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
