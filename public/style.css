@@ -117,6 +117,7 @@ a {
 }
 .fonctionnement__container__content:hover {
   background-color: rgba(146, 86, 220, 0.1176470588);
+  cursor: pointer;
 }
 .fonctionnement__container__content__num {
   position: relative;
