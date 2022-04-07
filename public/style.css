@@ -185,7 +185,7 @@ a {
   height: 190px;
   width: 100%;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
