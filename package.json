@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "application mobile de reservation en ligne ",
+  "main": "index.js",
+  "scripts": {
+   "sass": "sass --watch ./sass/main.scss:./public/style.css ./sass/lpdg.scss:./public/lpdg.css ./sass/responsive.scss:./public/responsive.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThevenonT/ohmyfood.git"
+  },
+  "author": "thevenon.t",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThevenonT/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/ThevenonT/ohmyfood#readme"
+}
