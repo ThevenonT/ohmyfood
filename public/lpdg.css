@@ -56,4 +56,370 @@ a {
   object-position: center;
 }
 
+.container {
+  width: 100%;
+  position: relative;
+  bottom: 50px;
+  z-index: 1;
+  background-color: whitesmoke;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.container__content__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 20px;
+}
+.container__content__title__h1 {
+  padding: 10px;
+}
+.container__content__title__icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: bottom;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  margin-right: 20px;
+}
+.container__content__title__icons:hover {
+  cursor: pointer;
+}
+.container__content__title__icons:hover:active {
+  transform: scale(1.2);
+}
+.container__content__title__icons:hover .desactive {
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.container__content__title__icons:hover .active {
+  transform: translateY(-100%);
+  background: -webkit-linear-gradient(80deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  transition: all 0.2s linear;
+}
+.container__content__title__icons__icon {
+  font-size: 30px;
+}
+.container__entre__title {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.container__entre__title__h2 {
+  font-size: 20px;
+  font-weight: 2;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.container__entre__title__souligne {
+  width: 50px;
+  height: 5px;
+  background-color: aqua;
+}
+.container__entre__anim {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  animation: 0.8s ease-in 1s secondStep;
+}
+.container__entre__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-height: 70px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.147);
+  width: 95%;
+  margin: 10px;
+  border-radius: 20px;
+  animation: 0.8s ease-in 1s firstStep;
+}
+.container__entre__content:hover .container__entre__content__titles__none {
+  width: 70px;
+  padding: 21px;
+  opacity: 1;
+  transition: all 1s, padding 0s linear;
+}
+.container__entre__content__titles {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+.container__entre__content__titles__none {
+  overflow: hidden;
+  width: 0%;
+  height: 100%;
+  padding: 0;
+  opacity: 0;
+  font-size: 25px;
+  background-color: aqua;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: all 1s linear;
+}
+.container__entre__content__titles__none i {
+  color: white;
+}
+.container__entre__content__titles__title {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container__entre__content__titles__title__h1 {
+  width: 100%;
+  font-size: 20px;
+  margin: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container__entre__content__titles__title__h2 {
+  width: 100%;
+  font-size: 16px;
+  margin: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container__entre__content__titles__prix {
+  margin: 15px;
+}
+.container__plats__title {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.container__plats__title__h2 {
+  font-size: 20px;
+  font-weight: 2;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.container__plats__title__souligne {
+  width: 50px;
+  height: 5px;
+  background-color: aqua;
+}
+.container__plats__anim {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  animation: 0.8s ease-in 1s secondStep;
+}
+.container__plats__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-height: 70px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.147);
+  width: 95%;
+  margin: 10px;
+  border-radius: 20px;
+  animation: 0.8s ease-in 1s firstStep;
+}
+.container__plats__content:hover .container__plats__content__titles__none {
+  width: 80px;
+  padding: 21px;
+  opacity: 1;
+  transition: all 1s, padding 0s linear;
+}
+.container__plats__content__titles {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+.container__plats__content__titles__none {
+  overflow: hidden;
+  width: 0%;
+  height: 100%;
+  padding: 0;
+  opacity: 0;
+  font-size: 25px;
+  background-color: aqua;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: all 1s linear;
+}
+.container__plats__content__titles__none i {
+  color: white;
+}
+.container__plats__content__titles__title {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container__plats__content__titles__title__h1 {
+  width: 100%;
+  font-size: 20px;
+  margin: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container__plats__content__titles__title__h2 {
+  width: 100%;
+  font-size: 16px;
+  margin: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container__plats__content__titles__prix {
+  margin: 15px;
+}
+.container__desserts {
+  min-height: 300px;
+}
+.container__desserts__title {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.container__desserts__title__h2 {
+  font-size: 20px;
+  font-weight: 2;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.container__desserts__title__souligne {
+  width: 50px;
+  height: 5px;
+  background-color: aqua;
+}
+.container__desserts__anim {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  animation: 0.8s ease-in 1s secondStep;
+}
+.container__desserts__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-height: 70px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.147);
+  width: 95%;
+  margin: 10px;
+  border-radius: 20px;
+  animation: 0.8s ease-in 1s firstStep;
+}
+.container__desserts__content:hover .container__desserts__content__titles__none {
+  width: 80px;
+  padding: 21px;
+  opacity: 1;
+  transition: all 1s, padding 0s linear;
+}
+.container__desserts__content__titles {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+.container__desserts__content__titles__none {
+  overflow: hidden;
+  width: 0%;
+  height: 100%;
+  padding: 0;
+  opacity: 0;
+  font-size: 25px;
+  background-color: aqua;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: all 1s linear;
+}
+.container__desserts__content__titles__none i {
+  color: white;
+}
+.container__desserts__content__titles__title {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container__desserts__content__titles__title__h1 {
+  width: 100%;
+  font-size: 20px;
+  margin: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container__desserts__content__titles__title__h2 {
+  width: 100%;
+  font-size: 16px;
+  margin: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container__desserts__content__titles__prix {
+  margin: 15px;
+}
+.container__btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+.container__btn__title {
+  font-size: 16px;
+  color: whitesmoke;
+  background: -webkit-linear-gradient(-80deg, #FF79DA, #9356DC);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.44);
+  padding: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border-radius: 50px;
+}
+.container__btn__title:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.44);
+}
+
+.active {
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+.sous-titre {
+  color: #787878;
+}
+
 /*# sourceMappingURL=lpdg.css.map */
