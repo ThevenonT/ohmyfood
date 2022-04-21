@@ -68,6 +68,7 @@ a {
 .global__Loader {
   height: 100%;
   width: 100%;
+  -webkit-animation: body 3s ease-in-out;
   animation: body 3s ease-in-out;
 }
 
@@ -81,7 +82,9 @@ a {
   background: -webkit-linear-gradient(-80deg, #FF79DA, #9356DC);
   height: 100%;
   width: 100%;
+  -webkit-animation: close linear 3s;
   animation: close linear 3s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   overflow: hidden;
 }
@@ -123,27 +126,53 @@ a {
   height: 500px;
 }
 .img.assiette {
+  -webkit-animation: assiette 1s ease-in-out;
   animation: assiette 1s ease-in-out;
 }
 .img.fourchette {
   transform: translate(-999px, 500px);
+  -webkit-animation: fourchette 1s ease-in-out;
   animation: fourchette 1s ease-in-out;
+  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 .img.couteau {
   transform: translate(999px, 500px);
+  -webkit-animation: couteau 1s ease-in-out;
   animation: couteau 1s ease-in-out;
+  -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes close {
+  0% {
+    height: 100%;
+  }
+  90% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
   }
 }
 @keyframes close {
@@ -157,6 +186,16 @@ a {
     height: 0%;
   }
 }
+@-webkit-keyframes body {
+  0% {
+    overflow: hidden;
+    height: 0%;
+  }
+  100% {
+    height: 0%;
+    overflow: hidden;
+  }
+}
 @keyframes body {
   0% {
     overflow: hidden;
@@ -167,6 +206,14 @@ a {
     overflow: hidden;
   }
 }
+@-webkit-keyframes assiette {
+  0% {
+    transform: translate(999px, 999px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
 @keyframes assiette {
   0% {
     transform: translate(999px, 999px);
@@ -175,9 +222,25 @@ a {
     transform: translate(0px, 0px);
   }
 }
+@-webkit-keyframes fourchette {
+  0% {
+    transform: translate(-999px, 500px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
 @keyframes fourchette {
   0% {
     transform: translate(-999px, 500px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@-webkit-keyframes couteau {
+  0% {
+    transform: translate(999px, 500px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -218,6 +281,7 @@ a {
   transition: all 0.2s linear;
 }
 .reservation__btn:hover {
+  -webkit-filter: brightness(1.1);
   filter: brightness(1.1);
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.44);
   transition: all 0.2s linear;
@@ -243,6 +307,7 @@ a {
   flex-direction: column;
 }
 .fonctionnement__container__content {
+  -webkit-animation: 0.8s linear 0.3s starte;
   animation: 0.8s linear 0.3s starte;
   display: flex;
   flex-direction: row;
@@ -288,6 +353,16 @@ a {
   padding-left: 20px;
 }
 
+@-webkit-keyframes starte {
+  0% {
+    margin-top: 40px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 20px;
+  }
+}
 @keyframes starte {
   0% {
     margin-top: 40px;
@@ -417,6 +492,7 @@ a {
 .restaurants__containers__content__description__icons:hover .active {
   transform: translateY(-100%);
   background: -webkit-linear-gradient(80deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 1;
@@ -448,6 +524,7 @@ a {
 .footer__content__img {
   width: 35%;
   color: transparent;
+  -webkit-filter: invert(100%);
   filter: invert(100%);
   padding: 10px;
   padding-left: 5px;
