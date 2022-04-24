@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 html{
     width: 100%;
@@ -37,7 +38,8 @@ header{
         z-index: 1;
         box-shadow: 0px 3px 10px 0px rgba(139, 139, 139, 0.767);
         &__img{
-            width: 45%;
+            width: 43%;
+
         }
     }
     &__localisation{
@@ -47,11 +49,11 @@ header{
         justify-content: center;
         flex-direction: row;
         width: 100%;
-        background-color: rgb(228, 228, 228);
+        background-color: rgb(234, 234, 234);
         padding: 10px;
         &__icon{
-            font-size: 18px;
-            padding: 10px;
+            font-size: 20px;
+            margin-right: 10px;
         }
 
         &__txt{
@@ -297,27 +299,30 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(240, 240, 240, 0.74);
-    padding: 50px;
+    background-color:  rgb(246, 246, 246);
+    padding: 30px;
     &__title{
         padding: 20px;
-        font-size: 30px;
+        font-size: 25px;
     }
     &__txt{
         padding: 0px;
         font-size: 20px;
         margin-bottom: 30px;
+        color: gray;
     }
     &__btn{
         
-        font-size: 20px;
-        padding: 15px;
+        font-size: 18px;
+        padding: 18px;
         border-radius: 30px;
         color: white;
         text-decoration: none;
         box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.44);
         background: linear-gradient(175deg, #FF79DA, #9356DC);
         transition: all 0.2s linear;
+        margin-top: 5px;
+        margin-bottom: 30px;
         &:hover{
             -webkit-filter: brightness(1.1);
                     filter: brightness(1.1);
@@ -335,7 +340,7 @@ a{
     
 
     &__title{
-        font-size: 29px;
+        font-size: 25px;
         text-align: left;
         padding-top: 20px;
         padding-left: 20px;
@@ -354,42 +359,71 @@ a{
             justify-content: flex-start;
             align-items: center;
             width: 85%;
-            margin: 20px;
-            padding: 5px;
+            margin: 15px;
+            padding: 10px;
+            
             border-radius: 20px;
-            background-color: rgb(250, 250, 250);
-            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.44);
+            background-color: rgb(246, 246, 246);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
             &:hover{
                 background-color: #9256dc1e;
                 cursor: pointer;
+                .fonctionnement__container__content__icon{
+                    color: #9356DC;
+                }
+                .fonctionnement__container__content__icons__icon{
+                    color: #9356DC;
+                }
+
             }
-            &__num{
+            &__nums{
                 position: relative;
-                font-size: 16px;
-                right: 15px;
+                right: 20px;
+                background-color: #9356DC;
+                border-radius: 50%;
+                padding: 5px;
                 height: auto;
                 width: auto;
-                border-radius: 50%;
-                padding: 8px;
+                max-width: 25px;
+                min-width: 25px;
+                max-height: 25px;
                 color: white;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                background-color: #9356DC;
+                &__num{
+                
+                    font-size: 16px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                
+                }
             }
+           
             &__icons{
-                margin: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 20px;
+                overflow: hidden;
+                margin-left: 5px;
+                
                 &__icon{
-                    font-size: 18px;
+                  margin: 1px;
+                    font-size: 20px;
+                    color: gray;
                 }
             }
             &__icon{
-                margin: 10px;
-                font-size: 18px;
-                
+                color: gray;
+                font-size: 20px;
+                font-weight: 900;
+                width: 20px;
+                max-width: 20px;
+                margin-left: 5px;
             }
             &__txt{
-                font-size: 20px;
-                padding: 25px;
+                font-weight: bolder;
+                color: rgba(0, 0, 0, 0.707);
+                font-size: 17px;
+                padding: 20px;
                 padding-left: 20px;
             }
         }
@@ -423,18 +457,17 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: rgba(240, 240, 240, 0.678);
+    background-color:  rgb(246, 246, 246);
 
     width: 100%;
     margin-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 
     &__title{
-        font-size: 30px;
+        font-size: 25px;
         margin-top: 50px;
         margin-left: 20px;
-        margin-bottom: 10px;
-
+        margin-bottom: 20px;
         text-align: left;
     }
     &__containers{
@@ -452,32 +485,38 @@ a{
             width: 90%;
             border-radius: 20px;
             margin-top: 20px;
-            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.44);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 
             &__img{
 
                 
                 border-top-left-radius: 20px;
                 border-top-right-radius: 20px;
-                height: 190px;
+                height: 195px;
                 width: 100%;
+                object-fit: cover;
                 background-size: cover;
-                background-position: center;
+                background-position: bottom;
                 display: flex;
                 flex-direction: row;
                 align-items: flex-start;
                 justify-content: flex-end;
+
                 &__new{
                     text-align: right;
-                    font-size: 18px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: rgba(0, 0, 0, 0.405);
                     width: auto;
                     position: relative;
                     top: 15px;
                     right: 15px;
-                    padding: 12px;
-                    padding-top: 5px;
-                    padding-bottom: 5px;
-                    border-radius: 7%;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    
+                    border-radius: 5%;
                     background-color: #99E2D0;
 
                 }
@@ -486,7 +525,7 @@ a{
                 background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg); 
             }
             &.img--1{
-                background-position: 50% 62%;
+                
                 background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
             }
             &.img--2{
@@ -515,19 +554,17 @@ a{
 
                 }
                 &__title{
-                    font-size: 22px;
+                    margin-bottom: 5px;
+                    font-size: 19px;
+                    font-weight: 3000px;
                 }
                 &__localisation{
-                    font-size: 22px;
+                    font-size: 19px;
+                    color: gray;
+
 
                 }
-                &__icon{
-                    
-                    font-size: 30px;
-                    
-                     
-                   
-                }
+                
                 &__icons{
                     display: flex;
                     flex-direction: column;
@@ -535,9 +572,16 @@ a{
                     justify-content: bottom;
                     width: 40px;
                     height: 30px;
+                    
                     overflow: hidden;
                     transition: all 0.2s linear;
                     margin-right: 20px ;
+                    &__icon{
+                    
+                        font-size: 30px;
+                     
+                   
+                    }
                     &:hover{
                         cursor: pointer;
 
@@ -581,35 +625,41 @@ a{
 }
 
 .footer{
-    background-color: rgba(0, 0, 0, 0.808);
+    background-color: rgba(53,53,53,255);
     color: white;
     width: 100%;
     padding: 0px;
     padding-bottom: 20px;
+    
     &__content{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-evenly;
-        padding: 25px;
+        padding: 20px;
+        
+        padding-bottom: 10px;
     
         &__img{
-            width: 35%;
+            width: 33%;
             color: transparent;
             -webkit-filter: invert(100%);
                     filter: invert(100%);
-           padding: 10px;
+           padding: 12px;
+           margin-bottom: 5px;
            padding-left: 5px;
 
         }
         &__lien{
             color: white;
-            font-size: 20px;
-            margin: 2px;
+            font-size: 17px;
+            margin: 4px;
+            
 
             &__icon{
-                font-size: 16px;
+                font-size: 15px;
                 padding: 5px;
+                width: 20px;
             }
         }
     }
