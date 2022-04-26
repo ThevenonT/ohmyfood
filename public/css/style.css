@@ -17,7 +17,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: top;
   text-align: center;
 }
 
@@ -487,14 +486,13 @@ a {
 .restaurants__containers__content__description__txt {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   padding: 10px;
   text-align: left;
 }
 .restaurants__containers__content__description__title {
   margin-bottom: 5px;
   font-size: 19px;
-  font-weight: 3000px;
 }
 .restaurants__containers__content__description__localisation {
   font-size: 19px;
@@ -504,7 +502,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: bottom;
   width: 40px;
   height: 30px;
   overflow: hidden;
