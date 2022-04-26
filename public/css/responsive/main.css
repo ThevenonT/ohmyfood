@@ -1,0 +1,30 @@
+@media (min-width: 768px) { 
+    .navbar__title__img{
+    width: 200px;
+}
+.fonctionnement__container{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.fonctionnement__container__content{
+    max-width: 320px;
+    min-height: 70px;
+  
+}
+.fonctionnement__container__content__txt{
+    padding: 10px;
+}
+.restaurants__containers{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.restaurants__containers__content{
+    max-width: 400px;
+    min-height: 200px;
+    margin: 20px;
+}
+.footer__content__img{
+    width: 200px;
+}
+}
