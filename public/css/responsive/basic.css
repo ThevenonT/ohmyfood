@@ -10,15 +10,19 @@
     }
     .container__entre{
         max-width: 30%;
-    }
-    .container__plats{
-        max-width: 30%;
+        min-width: 350px;
     }
     .container__entre__title{
         margin-top: 30px;
+        
+    }
+    .container__plats{
+        max-width: 30%;
+        min-width: 350px;
     }
     .container__desserts{
         max-width: 30%;
+        min-width: 350px;
     }
     .footer__content__img{
         width: 200px;
