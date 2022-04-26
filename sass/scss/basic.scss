@@ -501,7 +501,7 @@ a{
                 transition: all 1s,  padding 0.2s linear;
              }
              &:hover &__titles__none i{
-                animation: 0.5s linear 0.2s turn;
+                animation: 0.5s linear  turn;
              }
  
          &__titles{
@@ -651,7 +651,7 @@ a{
         transform: rotateZ(0deg);
     }
     100%{
-        transform: rotateZ(-180deg);
+        transform: rotateZ(-360deg);
     }
 }
 a{
