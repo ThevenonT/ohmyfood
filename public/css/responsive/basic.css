@@ -5,6 +5,7 @@
     .ListOfDishes{
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: flex-start
 
     }
     .container__entre{
