@@ -32,11 +32,11 @@ header{
         
         width: 100%;
         font-size: 40px;
-        padding-top: 20px;
-        padding-bottom: 10px;
+        padding-top: 17px;
+        padding-bottom: 5px;
         margin: 0px;
         z-index: 1;
-        box-shadow: 0px 3px 10px 0px rgba(139, 139, 139, 0.767);
+        box-shadow: 0px 2px 5px 0px rgba(139, 139, 139, 0.367);
         &__img{
             width: 43%;
 
@@ -50,14 +50,16 @@ header{
         flex-direction: row;
         width: 100%;
         background-color: rgb(234, 234, 234);
-        padding: 10px;
+        padding:  8px;
+        font-weight: bold;
+        color: #595959;
         &__icon{
             font-size: 20px;
             margin-right: 10px;
         }
 
         &__txt{
-            font-size: 18px;
+            font-size: 17px;
             padding: 10px;
         }
     } 
@@ -300,7 +302,7 @@ a{
     flex-direction: column;
     align-items: center;
     background-color:  rgb(246, 246, 246);
-    padding: 30px;
+    padding: 20px 30px;
     &__title{
         padding: 20px;
         font-size: 25px;
@@ -313,8 +315,9 @@ a{
     }
     &__btn{
         
-        font-size: 18px;
-        padding: 18px;
+        font-size: 17px;
+        
+        padding: 18px 30px ;
         border-radius: 30px;
         color: white;
         text-decoration: none;
@@ -322,7 +325,7 @@ a{
         background: linear-gradient(175deg, #FF79DA, #9356DC);
         transition: all 0.2s linear;
         margin-top: 5px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         &:hover{
             -webkit-filter: brightness(1.1);
                     filter: brightness(1.1);
@@ -342,9 +345,8 @@ a{
     &__title{
         font-size: 25px;
         text-align: left;
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-bottom: 10px;
+        /* margin: haut droite bas gauche */
+        margin: 55px 0px 20px 20px;
     }
     &__container{
         display: flex;
@@ -358,8 +360,11 @@ a{
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
+            position: relative;
+            left: 2px;
             width: 85%;
             margin: 15px;
+            
             padding: 10px;
             
             border-radius: 20px;
@@ -381,7 +386,7 @@ a{
                 right: 20px;
                 background-color: #9356DC;
                 border-radius: 50%;
-                padding: 5px;
+                padding: 6px;
                 height: auto;
                 width: auto;
                 max-width: 25px;
@@ -465,9 +470,7 @@ a{
 
     &__title{
         font-size: 25px;
-        margin-top: 50px;
-        margin-left: 20px;
-        margin-bottom: 20px;
+        margin: 65px 0px 5px 20px;
         text-align: left;
     }
     &__containers{
@@ -657,8 +660,9 @@ a{
             
 
             &__icon{
-                font-size: 15px;
-                padding: 5px;
+                font-size: 14px;
+                padding: 0px 10px 0px 0px;
+                
                 width: 20px;
             }
         }

@@ -33,11 +33,11 @@ header {
 .navbar__title {
   width: 100%;
   font-size: 40px;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 17px;
+  padding-bottom: 5px;
   margin: 0px;
   z-index: 1;
-  box-shadow: 0px 3px 10px 0px rgba(139, 139, 139, 0.767);
+  box-shadow: 0px 2px 5px 0px rgba(139, 139, 139, 0.367);
 }
 .navbar__title__img {
   width: 43%;
@@ -49,14 +49,16 @@ header {
   flex-direction: row;
   width: 100%;
   background-color: #eaeaea;
-  padding: 10px;
+  padding: 8px;
+  font-weight: bold;
+  color: #595959;
 }
 .navbar__localisation__icon {
   font-size: 20px;
   margin-right: 10px;
 }
 .navbar__localisation__txt {
-  font-size: 18px;
+  font-size: 17px;
   padding: 10px;
 }
 
@@ -260,7 +262,7 @@ a {
   flex-direction: column;
   align-items: center;
   background-color: #f6f6f6;
-  padding: 30px;
+  padding: 20px 30px;
 }
 .reservation__title {
   padding: 20px;
@@ -273,8 +275,8 @@ a {
   color: gray;
 }
 .reservation__btn {
-  font-size: 18px;
-  padding: 18px;
+  font-size: 17px;
+  padding: 18px 30px;
   border-radius: 30px;
   color: white;
   text-decoration: none;
@@ -282,7 +284,7 @@ a {
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   transition: all 0.2s linear;
   margin-top: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .reservation__btn:hover {
   -webkit-filter: brightness(1.1);
@@ -300,9 +302,8 @@ a {
 .fonctionnement__title {
   font-size: 25px;
   text-align: left;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 10px;
+  /* margin: haut droite bas gauche */
+  margin: 55px 0px 20px 20px;
 }
 .fonctionnement__container {
   display: flex;
@@ -317,6 +318,8 @@ a {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
+  left: 2px;
   width: 85%;
   margin: 15px;
   padding: 10px;
@@ -339,7 +342,7 @@ a {
   right: 20px;
   background-color: #9356DC;
   border-radius: 50%;
-  padding: 5px;
+  padding: 6px;
   height: auto;
   width: auto;
   max-width: 25px;
@@ -412,9 +415,7 @@ a {
 }
 .restaurants__title {
   font-size: 25px;
-  margin-top: 50px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin: 65px 0px 5px 20px;
   text-align: left;
 }
 .restaurants__containers {
@@ -571,8 +572,8 @@ a {
   margin: 4px;
 }
 .footer__content__lien__icon {
-  font-size: 15px;
-  padding: 5px;
+  font-size: 14px;
+  padding: 0px 10px 0px 0px;
   width: 20px;
 }
 
