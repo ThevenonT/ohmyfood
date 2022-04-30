@@ -48,8 +48,8 @@ header {
   flex-direction: row;
   width: 100%;
   background-color: #eaeaea;
-  padding: 8px;
-  font-weight: bold;
+  padding: 7px;
+  font-weight: 600;
   color: #595959;
 }
 .navbar__localisation__icon {
@@ -58,6 +58,8 @@ header {
 }
 .navbar__localisation__txt {
   font-size: 17px;
+  font-optical-sizing: auto;
+  word-spacing: 1px;
   padding: 10px;
 }
 
@@ -261,21 +263,23 @@ a {
   flex-direction: column;
   align-items: center;
   background-color: #f6f6f6;
-  padding: 20px 30px;
 }
 .reservation__title {
-  padding: 20px;
+  font-optical-sizing: auto;
+  padding: 45px 50px 15px;
   font-size: 25px;
+  font-weight: bold;
 }
 .reservation__txt {
   padding: 0px;
   font-size: 20px;
   margin-bottom: 30px;
-  color: gray;
+  color: rgba(136, 136, 136, 0.847);
+  font-weight: 100;
 }
 .reservation__btn {
-  font-size: 17px;
-  padding: 18px 30px;
+  font-size: 18px;
+  padding: 17px 23px;
   border-radius: 30px;
   color: white;
   text-decoration: none;
@@ -283,7 +287,7 @@ a {
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   transition: all 0.2s linear;
   margin-top: 5px;
-  margin-bottom: 45px;
+  margin-bottom: 55px;
 }
 .reservation__btn:hover {
   -webkit-filter: brightness(1.1);

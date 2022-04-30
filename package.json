@@ -4,7 +4,7 @@
   "description": "application mobile de reservation en ligne ",
   "main": "index.js",
   "scripts": {
-   "sass": "sass --watch ./sass/scss/main.scss:./public/css/style.css ./sass/scss/basic.scss:./public/css/basic.css ./sass/responsive.scss:./public/responsive.css"
+   "sass": "sass --watch ./sass/scss/main.scss:./public/css/style.css ./sass/scss/basic.scss:./public/css/basic.css"
   },
   "repository": {
     "type": "git",

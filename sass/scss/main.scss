@@ -50,8 +50,8 @@ header{
         flex-direction: row;
         width: 100%;
         background-color: rgb(234, 234, 234);
-        padding:  8px;
-        font-weight: bold;
+        padding:  7px;
+        font-weight: 600;
         color: #595959;
         &__icon{
             font-size: 20px;
@@ -60,6 +60,8 @@ header{
 
         &__txt{
             font-size: 17px;
+            font-optical-sizing: auto;
+            word-spacing: 1px;
             padding: 10px;
         }
     } 
@@ -302,22 +304,26 @@ a{
     flex-direction: column;
     align-items: center;
     background-color:  rgb(246, 246, 246);
-    padding: 20px 30px;
+    
+    
     &__title{
-        padding: 20px;
+        font-optical-sizing: auto;
+        padding: 45px 50px 15px;
         font-size: 25px;
+        font-weight: bold;
     }
     &__txt{
         padding: 0px;
         font-size: 20px;
         margin-bottom: 30px;
-        color: gray;
+        color: rgba(136, 136, 136, 0.847);
+        font-weight: 100;
     }
     &__btn{
         
-        font-size: 17px;
+        font-size: 18px;
         
-        padding: 18px 30px ;
+        padding: 17px 23px ;
         border-radius: 30px;
         color: white;
         text-decoration: none;
@@ -325,7 +331,7 @@ a{
         background: linear-gradient(175deg, #FF79DA, #9356DC);
         transition: all 0.2s linear;
         margin-top: 5px;
-        margin-bottom: 45px;
+        margin-bottom: 55px;
         &:hover{
             -webkit-filter: brightness(1.1);
                     filter: brightness(1.1);
@@ -458,7 +464,6 @@ a{
         margin-top: 20px;
     }
 }
-
 
 .restaurants{
     display: flex;
