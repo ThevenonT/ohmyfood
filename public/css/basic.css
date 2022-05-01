@@ -25,13 +25,13 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 70px;
+  height: 63px;
 }
 .navbar__arrow {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 20px 20px 10px 20px;
+  padding: 20px 20px 15px 20px;
   width: 20%;
 }
 .navbar__arrow a i {
@@ -46,17 +46,22 @@ a {
 }
 .navbar__title__img {
   margin: 10px 10px 0px 0px;
-  width: 185px;
+  width: 165px;
 }
 .navbar__none {
   width: 20%;
   height: 100%;
 }
 
-.img {
+.img__content {
+  overflow: hidden;
+}
+.img__content .img {
   width: 100%;
+  min-height: 260px;
   object-fit: cover;
-  object-position: center;
+  background-position: top;
+  object-position: top;
 }
 
 .ListOfDishes {
@@ -71,11 +76,11 @@ a {
 .container {
   width: 100%;
   position: relative;
-  bottom: 60px;
+  bottom: 45px;
   z-index: 1;
   background-color: #f5f5f5;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 .container__content__title {
   font-family: "Shrikhand", cursive;
@@ -83,8 +88,8 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  font-size: 20px;
-  padding-top: 25px;
+  font-size: 17px;
+  padding-top: 22px;
   padding-left: 15px;
   margin-bottom: 15px;
 }
@@ -127,11 +132,12 @@ a {
 }
 .container__entre__title {
   padding-left: 20px;
+  padding-bottom: 5px;
 }
 .container__entre__title__h2 {
-  font-size: 17px;
-  font-weight: 200;
-  margin-top: 10px;
+  font-size: 16px;
+  font-weight: lighter;
+  margin-top: 7px;
   margin-bottom: 6px;
 }
 .container__entre__title__souligne {
@@ -148,7 +154,6 @@ a {
   width: 100%;
   max-width: 100%;
   height: 100%;
-  margin-top: 10px;
   animation: 0.8s ease-in 1s secondStep;
 }
 .container__entre__content {
@@ -158,12 +163,12 @@ a {
   justify-content: space-between;
   overflow: hidden;
   height: 100%;
-  max-height: 75px;
+  max-height: 69px;
   background-color: white;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.147);
-  width: 95%;
-  margin: 8px;
-  border-radius: 20px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.102);
+  width: 92%;
+  margin: 10px 7px 11px;
+  border-radius: 15px;
   animation: 0.8s ease-in 1s firstStep;
 }
 .container__entre__content:hover {
@@ -183,9 +188,11 @@ a {
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: 100%;
+  margin-left: 5px;
 }
 .container__entre__content__titles__none {
   overflow: hidden;
@@ -213,42 +220,45 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap;
   height: 100%;
-  padding: 12px;
 }
 .container__entre__content__titles__title__h1 {
   width: 100%;
-  font-size: 20px;
+  font-size: 17px;
   padding-left: 5px;
   padding-bottom: 7px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-weight: 700;
 }
 .container__entre__content__titles__title__h2 {
   width: 100%;
-  font-size: 16px;
+  font-size: 14px;
+  word-spacing: -1px;
   padding-left: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 .container__entre__content__titles__prix {
-  margin: 10px 10px 0px 0px;
+  display: flex;
+  align-items: flex-end;
+  margin: 20px 10px 0px 0px;
   padding: 10px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 15px;
 }
 .container__plats {
   width: 100%;
+  margin-top: 20px;
 }
 .container__plats__title {
-  margin-top: 30px;
   padding-left: 20px;
 }
 .container__plats__title__h2 {
-  font-size: 17px;
-  font-weight: 200;
-  margin-top: 10px;
+  font-size: 16px;
+  font-weight: lighter;
+  margin-top: 7px;
   margin-bottom: 6px;
 }
 .container__plats__title__souligne {
@@ -265,7 +275,7 @@ a {
   width: 100%;
   max-width: 100%;
   height: 100%;
-  margin-top: 10px;
+  margin-top: 5px;
   animation: 0.8s ease-in 1s secondStep;
 }
 .container__plats__content {
@@ -275,12 +285,12 @@ a {
   justify-content: space-between;
   overflow: hidden;
   height: 100%;
-  max-height: 75px;
+  max-height: 70px;
   background-color: white;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.147);
-  width: 95%;
-  margin: 8px;
-  border-radius: 20px;
+  width: 92%;
+  margin: 10px 0px 7px 0px;
+  border-radius: 15px;
   animation: 0.8s ease-in 1s firstStep;
 }
 .container__plats__content:hover {
@@ -300,9 +310,11 @@ a {
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: 100%;
+  margin-left: 5px;
 }
 .container__plats__content__titles__none {
   overflow: hidden;
@@ -330,42 +342,45 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap;
   height: 100%;
-  padding: 12px;
 }
 .container__plats__content__titles__title__h1 {
   width: 100%;
-  font-size: 20px;
+  font-size: 17px;
   padding-left: 5px;
   padding-bottom: 7px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-weight: 700;
 }
 .container__plats__content__titles__title__h2 {
   width: 100%;
-  font-size: 16px;
+  font-size: 14px;
+  word-spacing: -1px;
   padding-left: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 .container__plats__content__titles__prix {
-  margin: 10px;
+  display: flex;
+  align-items: flex-end;
+  margin: 20px 10px 0px 0px;
   padding: 10px;
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 15px;
 }
 .container__desserts {
   width: 100%;
+  margin-top: 30px;
 }
 .container__desserts__title {
-  margin-top: 30px;
   padding-left: 20px;
 }
 .container__desserts__title__h2 {
-  font-size: 17px;
-  font-weight: 200;
-  margin-top: 10px;
+  font-size: 16px;
+  font-weight: lighter;
+  margin-top: 7px;
   margin-bottom: 6px;
 }
 .container__desserts__title__souligne {
@@ -382,7 +397,7 @@ a {
   width: 100%;
   max-width: 100%;
   height: 100%;
-  margin-top: 10px;
+  margin-top: 5px;
   animation: 0.8s ease-in 1s secondStep;
 }
 .container__desserts__content {
@@ -392,12 +407,12 @@ a {
   justify-content: space-between;
   overflow: hidden;
   height: 100%;
-  max-height: 75px;
+  max-height: 70px;
   background-color: white;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.147);
-  width: 95%;
-  margin: 8px;
-  border-radius: 20px;
+  width: 92%;
+  margin: 10px 0px 7px 0px;
+  border-radius: 15px;
   animation: 0.8s ease-in 1s firstStep;
 }
 .container__desserts__content:hover {
@@ -411,15 +426,17 @@ a {
   transition: all 1s, padding 0.2s linear;
 }
 .container__desserts__content:hover .container__desserts__content__titles__none i {
-  animation: 0.5s linear turn;
+  animation: 0.5s linear 0.2s turn;
 }
 .container__desserts__content__titles {
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: 100%;
+  margin-left: 5px;
 }
 .container__desserts__content__titles__none {
   overflow: hidden;
@@ -447,49 +464,55 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap;
   height: 100%;
-  padding: 12px;
 }
 .container__desserts__content__titles__title__h1 {
   width: 100%;
-  font-size: 20px;
+  font-size: 17px;
   padding-left: 5px;
   padding-bottom: 7px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-weight: 700;
 }
 .container__desserts__content__titles__title__h2 {
   width: 100%;
-  font-size: 16px;
+  font-size: 14px;
+  word-spacing: -1px;
   padding-left: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 .container__desserts__content__titles__prix {
-  margin: 10px;
+  display: flex;
+  align-items: flex-end;
+  margin: 20px 10px 0px 0px;
   padding: 10px;
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 15px;
 }
 .container__btn {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 50px 20px 20px 0px;
+  padding: 40px 20px 15px 0px;
 }
 .container__btn__title {
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 100;
   color: whitesmoke;
   background: -webkit-linear-gradient(-80deg, #FF79DA, #9356DC);
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.44);
-  padding: 18px 60px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.103);
+  padding: 17px 50px;
   border-radius: 50px;
+  transition: all 0.2s linear;
 }
 .container__btn__title:hover {
   cursor: pointer;
   filter: brightness(1.1);
+  transition: all 0.2s linear;
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.44);
 }
 
@@ -549,7 +572,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  padding: 20px;
+  padding: 15px 20px 13px;
   padding-bottom: 10px;
 }
 .footer__content__img {
@@ -563,7 +586,7 @@ a {
 }
 .footer__content__lien {
   color: white;
-  font-size: 17px;
+  font-size: 16px;
   margin: 4px;
 }
 .footer__content__lien__icon {
