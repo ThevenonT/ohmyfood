@@ -1,6 +1,7 @@
 @media (min-width: 768px) { 
-    .img{
+    .img__content .img{
         max-height: 500px;
+        object-position: center;
     }
     .ListOfDishes{
         flex-direction: row;
@@ -8,6 +9,7 @@
         align-items: flex-start
 
     }
+    
     .container__entre{
         max-width: 30%;
         min-width: 350px;

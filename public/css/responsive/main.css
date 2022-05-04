@@ -21,8 +21,11 @@
 }
 .restaurants__containers__content{ 
     max-width: 400px;
-    min-height: 200px;
+    min-height: 280px;
     margin: 20px;
+}
+.restaurants__containers__content__img{
+    min-height: 200px;
 }
 .footer__content__img{
     width: 200px;

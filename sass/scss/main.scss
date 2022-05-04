@@ -19,6 +19,7 @@ body{
     text-align: center;
    
 }
+/* nav bar */
 header{
     width: 100%;
     
@@ -85,7 +86,7 @@ a{
    
 }
 .section{
-    z-index:10;
+    z-index: 10;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -99,6 +100,7 @@ a{
     -webkit-animation-fill-mode: forwards; 
             animation-fill-mode: forwards;
     overflow: hidden;
+
     &__loader{
         width: 250px;
         height: 250px;
@@ -107,6 +109,7 @@ a{
         display: inline-block;
         position: relative;
     }
+
     &__loader-quart{
         border-radius: 50%;
         position: relative;
@@ -158,6 +161,7 @@ a{
             animation-fill-mode: forwards;
     }
 }
+/* animation loader */
 @-webkit-keyframes spin {
     0%{
         transform: rotate(0deg);
@@ -213,7 +217,7 @@ a{
     }
    
     100%{
-        height: 0%;
+        height: 100%;
          overflow: hidden;
          
     }
@@ -304,7 +308,7 @@ a{
     }
     
 }
-
+/* reservation  */
 .reservation {
     display: flex;
     flex-direction: column;
@@ -331,7 +335,7 @@ a{
     }
     &__btn{
         
-        font-size: 15px;
+        font-size: 16px;
         
         padding: 16px 23px ;
         border-radius: 30px;
@@ -350,7 +354,7 @@ a{
         }
     }
 }
-
+/* fonctionnement  */
 .fonctionnement{
     display: flex;
     flex-direction: column;
@@ -474,7 +478,7 @@ a{
         margin-top: 20px;
     }
 }
-
+/* restaurants  */
 .restaurants{
     display: flex;
     flex-direction: column;
@@ -648,7 +652,7 @@ a{
     
    
 }
-
+/* footer */
 .footer{
     background-color: #282828ec;
     color: white;
