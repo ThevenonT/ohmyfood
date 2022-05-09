@@ -109,17 +109,14 @@ a {
   transition: all 0.2s linear;
   margin-right: 20px;
 }
-.container__content__title__icons:hover {
+.container__content__title__icons:active {
   cursor: pointer;
 }
-.container__content__title__icons:hover:active {
-  transform: scale(1.2);
-}
-.container__content__title__icons:hover .desactive {
+.container__content__title__icons:active .desactive {
   opacity: 0;
   transition: all 0.2s linear;
 }
-.container__content__title__icons:hover .active {
+.container__content__title__icons:active .active {
   transform: translateY(-100%);
   background: -webkit-linear-gradient(80deg, #FF79DA, #9356DC);
   background-clip: text;

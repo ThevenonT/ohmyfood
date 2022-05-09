@@ -530,17 +530,14 @@ a {
 .restaurants__containers__content__description__icons__icon {
   font-size: 30px;
 }
-.restaurants__containers__content__description__icons:hover {
+.restaurants__containers__content__description__icons:active {
   cursor: pointer;
 }
-.restaurants__containers__content__description__icons:hover:active {
-  transform: scale(1.2);
-}
-.restaurants__containers__content__description__icons:hover .desactive {
+.restaurants__containers__content__description__icons:active .desactive {
   opacity: 0;
   transition: all 0.2s linear;
 }
-.restaurants__containers__content__description__icons:hover .active {
+.restaurants__containers__content__description__icons:active .active {
   transform: translateY(-100%);
   background: -webkit-linear-gradient(80deg, #FF79DA, #9356DC);
   -webkit-background-clip: text;

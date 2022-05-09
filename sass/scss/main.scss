@@ -325,10 +325,7 @@ a{
     &__txt{
         padding: 0px;
         word-spacing: -1px;
-        
         font-size: 18px;
-       
-       
         margin-bottom: 30px;
         color: rgba(136, 136, 136, 0.847);
         font-weight: 100;
@@ -336,7 +333,6 @@ a{
     &__btn{
         
         font-size: 16px;
-        
         padding: 16px 23px ;
         border-radius: 30px;
         color: white;
@@ -484,7 +480,6 @@ a{
     flex-direction: column;
     justify-content: flex-start;
     background-color:  rgb(246, 246, 246);
-
     width: 100%;
     margin-top: 30px;
     padding-bottom: 65px;
@@ -611,12 +606,10 @@ a{
                      
                    
                     }
-                    &:hover{
+                    &:active{
                         cursor: pointer;
 
-                        &:active{
-                            transform: scale(1.2);
-                        }
+                        
                            
                             & .desactive{
                                 opacity: 0;
@@ -646,11 +639,8 @@ a{
     }
 }
 .active{
-    
     opacity: 0;
     transition: all 0.5s linear;
-    
-   
 }
 /* footer */
 .footer{
